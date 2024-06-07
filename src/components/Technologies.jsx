@@ -5,7 +5,7 @@ import { FaJava } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { FaPython } from "react-icons/fa";
 import { SiCanva } from "react-icons/si";
-import { FaWindows } from "react-icons/fa";
+import { IoLogoJavascript } from "react-icons/io5";
 
 const Technologies = () => {
   return <div className="border-b border-neutral-600 pb-24">
@@ -34,7 +34,7 @@ const Technologies = () => {
              <SiCanva className="text-7xl text-purple-600"/>
         </div>
         <div className="rounded-2xl border-4 border-neutral-700 p-4">
-            <FaWindows className="text-7xl text-cyan-400"/>
+            <IoLogoJavascript className="text-7xl text-yellow-400"/>
         </div>
     </div>
   </div>

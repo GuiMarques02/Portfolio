@@ -1,4 +1,9 @@
+import project1 from "../assets/projects/project-1.jpg";
+import project2 from "../assets/projects/project-2.jpg";
+import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
+import project5 from "../assets/projects/project-5.jpg";
+import project6 from "../assets/projects/project-6.jpg";
 
 export const HERO_CONTENT = `I'm a wannabe front-end developer in my training arc. With a solid 0 years of experience, I'm on the exciting journey of mastering front-end technologies. As for back-end and database technologies, well, let's just say there's plenty of room for growth but hey, everyone starts somewhere, right? My goal is just to live day by day. 
 
@@ -39,21 +44,21 @@ export const EXPERIENCES = [
 export const PROJECTS = [
   {
     title: "Rogue Game",
-    image: project4,
+    image: project5,
     description:
       "A fully functional Java rogue like game with features like an inventory, enemys, keys and objetives.",
     technologies: ["Java", ],
   },
   {
     title: "LabTech Solutions",
-    image: project4,
+    image: project2,
     description:
       "An application for managing experiences in a laboratory with rats. Uses various techonolgies to make sure everything in the lab runs smoothly.",
     technologies: ["Java", "HTML", "CSS", "MongoDB", "MySQL", "PHP", "Flutter", "Android Studio"],
   },
   {
     title: "APOSTA NA DESPORTIVA",
-    image: project4,
+    image: project3,
     description:
       "A betting website for Liga Portuguesa. Various types of users each one having his own role.",
     technologies: ["Django", "HTML", "CSS"],
@@ -62,19 +67,19 @@ export const PROJECTS = [
     title: "AI Space Shooter Game",
     image: project4,
     description:
-      "Fully machine learning space shooter game with algorithm knowledge to make the best protection against an alien invasion.",
+      "Genetic algorithm space shooter game with algorithm knowledge to make the best protection against an alien invasion.",
     technologies: ["Python"],
   },
   {
     title: "Thread Based Snake Game",
-    image: project4,
+    image: project1,
     description:
       "A classic game of snake but with a little twist. Everything is done on threads and it can have multiple players simultaneously",
     technologies: ["Java"],
   },
   {
     title: "Fenix++",
-    image: project4,
+    image: project6,
     description:
       "A platform for ISCTE teachers, can be used to update class schedules. Need to miss a class? No problem quickly create a substitution class in seconds and much more.",
     technologies: ["React", "JS", "Trello", "GitHub"],
