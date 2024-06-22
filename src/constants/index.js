@@ -10,7 +10,9 @@ export const HERO_CONTENT = `I'm a wannabe front-end developer in my training ar
 I'm dedicated to creating innovative UIs that deliver beautiful and simple user experiences. Adaptable and with a good sense of humor, I'm eager to grow my skills and career in this ever-evolving world of web development.`;
 
 
-export const ABOUT_TEXT = `My journey has been anything but conventional. I initially aspired to join the marines, but a surgical operation altered my course. Undeterred, I enrolled in a Bachelor's program in Computer Engineering at ISCTE with zero prior experience. During my studies, I delved into various programming languages and discovered a profound interest in design and web development.
+export const ABOUT_TEXT = `(You can skip this by the way. It's not that relevant.)
+
+My journey has been anything but conventional. I initially aspired to join the marines, but a surgical operation altered my course. Undeterred, I enrolled in a Bachelor's program in Computer Engineering at ISCTE with zero prior experience. During my studies, I delved into various programming languages and discovered a profound interest in design and web development.
 
 Beyond the world of coding, I'm a sports junkie with an unyielding passion for athletics. Although I didn't pursue a career in sports, I have exciting plans to merge my love for sports with my software skills in the future.
 
@@ -18,10 +20,10 @@ Creativity is my forte, and I pride myself on my high adaptability and vibrant s
 
 export const EXPERIENCES = [
   {
-    year: "2021 - Present",
+    year: "2021 - 2024",
     role: "Student",
     company: "ISCTE - IUL",
-    description: "Currently finishing my Bachelor's in Computer Engineering, where I have built a 'strong' foundation in various programming languages and web development. I had several group projects, where i honed my skills in both teamwork, leadership and software development",
+    description: "Bachelor's in Computer Engineering, where I have built a strong foundation in various programming languages and web development. I had several group projects, where I honed my skills in both teamwork, leadership and software development",
     technologies: ["Java", "Python", "PHP", "HTML/CSS", "React", "MySQL"],
   },
   {

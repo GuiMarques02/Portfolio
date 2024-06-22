@@ -6,21 +6,21 @@ const About = () => {
   const paragraphs = ABOUT_TEXT.split('\n\n');
 
   return (
-    <div className="border-b border-neutral-600 pb-24">
-      <h2 className="my-20 text-center text-4xl">
-        <span className="bg-gradient-to-r from-pink-400 via-slate-400 to-purple-500 bg-clip-text text-transparent text-4xl tracking-tight">
+    <div className="pb-20 border-b border-neutral-600">
+      <h2 className="my-20 text-4xl text-center">
+        <span className="text-3xl tracking-tight text-transparent sm:text-4xl bg-gradient-to-r from-pink-400 via-slate-400 to-purple-500 bg-clip-text">
           About Me, Myself & I
         </span>
       </h2>
       <div className="flex flex-wrap">
         <div className="w-full lg:w-1/2 lg:p-8">
           <div className='flex items-center justify-center'>
-            <img className="rounded-[2.5rem] w-[550px] h-auto shadow-2xl" src={aboutImg} alt="logo_white" />
+            <img className="rounded-[2.5rem] w-[300px] sm:w-[450px] h-auto shadow-2xl" src={aboutImg} alt="logo_white" />
           </div>
         </div>
         <div className="w-full lg:w-1/2">
           <div className="flex justify-center lg:justify-start">
-            <div className="my-2 max-w-xl py-6">
+            <div className="max-w-3xl mx-5 my-2 font-light tracking-tighter pt-9 sm:mx-0">
               {paragraphs.map((paragraph, index) => (
                 <p key={index} className="mb-4 text-neutral-400">{paragraph}</p>
               ))}

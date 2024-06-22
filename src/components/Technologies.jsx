@@ -8,33 +8,33 @@ import { SiCanva } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
 
 const Technologies = () => {
-  return <div className="border-b border-neutral-600 pb-24">
-    <h2 className="my-20 text-center text-4xl"><span className="bg-gradient-to-r from-pink-400 via-slate-400 to-purple-500 bg-clip-text text-transparent text-4xl tracking-tight">What I pretend to know</span></h2>
-    <div className="flex flex-wrap items-center justify-center gap-4">
-        <div className="rounded-2xl border-4 border-neutral-700 p-4">
+  return <div className="pb-24 border-b border-neutral-600">
+    <h2 className="my-20 text-center"><span className="text-3xl tracking-tight text-transparent sm:text-4xl bg-gradient-to-r from-pink-400 via-slate-400 to-purple-500 bg-clip-text">What I pretend to know</span></h2>
+    <div className="flex flex-wrap items-center justify-center gap-6">
+        <div className="p-4 border-4 rounded-2xl border-neutral-700">
             <RiReactjsLine className="text-7xl text-cyan-400"/>
         </div>
-        <div className="rounded-2xl border-4 border-neutral-700 p-4">
+        <div className="p-4 border-4 rounded-2xl border-neutral-700">
             <RiTailwindCssFill className="text-7xl text-cyan-300"/>
         </div>
-        <div className="rounded-2xl border-4 border-neutral-700 p-4">
-            <RiHtml5Fill className="text-7xl text-orange-500"/>
+        <div className="p-4 border-4 rounded-2xl border-neutral-700">
+            <RiHtml5Fill className="text-orange-500 text-7xl"/>
         </div>            
-        <div className="rounded-2xl border-4 border-neutral-700 p-4">
-              <FaCss3Alt className="text-7xl text-blue-600"/>
+        <div className="p-4 border-4 rounded-2xl border-neutral-700">
+              <FaCss3Alt className="text-blue-600 text-7xl"/>
         </div>
-        <div className="rounded-2xl border-4 border-neutral-700 p-4">
+        <div className="p-4 border-4 rounded-2xl border-neutral-700">
              <FaJava className="text-7xl text-cyan-700"/>
         </div>
-        <div className="rounded-2xl border-4 border-neutral-700 p-4">
-            <FaPython className="text-7xl text-yellow-500"/>
+        <div className="p-4 border-4 rounded-2xl border-neutral-700">
+            <FaPython className="text-yellow-500 text-7xl"/>
         </div>
 
-        <div className="rounded-2xl border-4 border-neutral-700 p-4">
-             <SiCanva className="text-7xl text-purple-600"/>
+        <div className="p-4 border-4 rounded-2xl border-neutral-700">
+             <SiCanva className="text-purple-600 text-7xl"/>
         </div>
-        <div className="rounded-2xl border-4 border-neutral-700 p-4">
-            <IoLogoJavascript className="text-7xl text-yellow-400"/>
+        <div className="p-4 border-4 rounded-2xl border-neutral-700">
+            <IoLogoJavascript className="text-yellow-400 text-7xl"/>
         </div>
     </div>
   </div>

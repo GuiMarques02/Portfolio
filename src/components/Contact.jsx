@@ -20,9 +20,9 @@ const Contact = () => {
   };
 
   return (
-    <div className="border-b border-neutral-600 bg-black">
-      <h2 className="p-10 text-center text-4xl">
-        <span className="bg-gradient-to-r from-pink-400 via-slate-400 to-purple-500 bg-clip-text text-transparent text-4xl tracking-tight">
+    <div className="bg-black border-b border-neutral-600">
+      <h2 className="p-10 text-4xl text-center">
+        <span className="text-3xl tracking-tight text-transparent bg-gradient-to-r from-pink-400 via-slate-400 to-purple-500 bg-clip-text sm:text-4xl">
           Feel free to contact me
         </span>
       </h2>
@@ -34,7 +34,7 @@ const Contact = () => {
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             placeholder="Leave here your message with your name and email..."
-            className="w-full h-40 min-h-[200px] max-h-[400px] p-4 text-black text-[18px] rounded-[30px]"
+            className="w-full h-40 min-h-[200px] max-h-[400px] p-4 text-black text-[18px] sm:rounded-[30px] rounded-[20px]"
           />
           <button type="submit" className="absolute bottom-5 right-4 text-2xl bg-black p-2 rounded-full hover:bg-[#5932e6]">
             <IoIosSend />
