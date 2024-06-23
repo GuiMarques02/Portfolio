@@ -1,6 +1,7 @@
 import React from 'react';
 import aboutImg from "../assets/aboutMe.jpg";
 import { ABOUT_TEXT } from "../constants";
+import { motion } from "framer-motion";
 
 const About = () => {
   const paragraphs = ABOUT_TEXT.split('\n\n');
@@ -13,12 +14,22 @@ const About = () => {
         </span>
       </h2>
       <div className="flex flex-wrap">
-        <div className="w-full lg:w-1/2 lg:p-8">
+        <motion.div 
+        whileInView={{opacity:1, x: 0}}
+        initial={{x:-100, opacity: 0}} 
+        animate={{x:0, opacity:1}}
+        transition={{duration:1}}
+        className="w-full lg:w-1/2 lg:p-8">
           <div className='flex items-center justify-center'>
             <img className="rounded-[2.5rem] w-[300px] sm:w-[450px] h-auto shadow-2xl" src={aboutImg} alt="logo_white" />
           </div>
-        </div>
-        <div className="w-full lg:w-1/2">
+        </motion.div>
+        <motion.div 
+        whileInView={{opacity:1, x: 0}}
+        initial={{x:100, opacity: 0}} 
+        animate={{x:0, opacity:1}}
+        transition={{duration:1}}
+        className="w-full lg:w-1/2">
           <div className="flex justify-center lg:justify-start">
             <div className="max-w-3xl mx-5 my-2 font-light tracking-tighter pt-9 sm:mx-0">
               {paragraphs.map((paragraph, index) => (
@@ -26,7 +37,7 @@ const About = () => {
               ))}
             </div>
           </div>
-        </div>
+        </motion.div >
       </div>
     </div>
   );
