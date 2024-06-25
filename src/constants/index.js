@@ -5,7 +5,7 @@ import project4 from "../assets/projects/project-4.jpg";
 import project5 from "../assets/projects/project-5.jpg";
 import project6 from "../assets/projects/project-6.jpg";
 
-export const HERO_CONTENT = `I'm a wannabe front-end developer in my training arc. With a solid 0 years of experience, I'm on the exciting journey of mastering front-end technologies. As for back-end and database technologies, well, let's just say there's plenty of room for growth but hey, everyone starts somewhere, right? My goal is just to live day by day. 
+export const HERO_CONTENT = `I'm a wannabe front-end developer in my training arc. With a solid 0 years of experience, I'm on the exciting journey of mastering front-end technologies. As for back-end and database technologies, well, let's just say there's plenty of room for growth but hey, everyone starts somewhere, right? My goal is just to live day by day and learn from it. 
 
 I'm dedicated to creating innovative UIs that deliver beautiful and simple user experiences. Adaptable and with a good sense of humor, I'm eager to grow my skills and career in this ever-evolving world of web development.`;
 
