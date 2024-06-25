@@ -24,7 +24,7 @@ const Experience = () => {
               <p className="mb-4 text-neutral-400">{experience.description}</p>
               <div className="flex flex-wrap ">
                 {experience.technologies.map((tech, techIndex) => (
-                  <span key={techIndex} className="mr-2 mt-3 px-3 py-1 sm:mr-2 sm:mt-3 sm:px-4 sm:py-2 text-sm font-medium rounded-[20px] bg-neutral-900 text-purple-400">
+                  <span key={techIndex} className="mr-2 mt-3 px-3 py-1 sm:mr-2 sm:mt-3 sm:px-4 sm:py-2 text-sm font-medium rounded-[20px] bg-neutral-900 text-purple-400 hover:scale-110 hover:bg-purple-500 hover:bg-opacity-20 cursor-pointer">
                     {tech}
                   </span>
                 ))}

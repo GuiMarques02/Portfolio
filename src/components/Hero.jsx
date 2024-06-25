@@ -48,7 +48,7 @@ const Hero = () => {
             <motion.img 
             initial={{x:100, opacity: 0}} 
             animate={{x:0, opacity:1}}
-            transition={{duration:1, delay: 1.2}}
+            transition={{duration:1.6, delay: 1.4}}
             src={profilePic} alt="Guilherme Marques" className=" rounded-[2.5rem] w-[300px] sm:w-[450px] h-auto shadow-2xl" />
           </div>
         </div>

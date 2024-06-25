@@ -16,9 +16,9 @@ const About = () => {
       <div className="flex flex-wrap">
         <motion.div 
         whileInView={{opacity:1, x: 0}}
-        initial={{x:-100, opacity: 0}} 
+        initial={{x:-200, opacity: 0}} 
         animate={{x:0, opacity:1}}
-        transition={{duration:1}}
+        transition={{duration:4}}
         className="w-full lg:w-1/2 lg:p-8">
           <div className='flex items-center justify-center'>
             <img className="rounded-[2.5rem] w-[300px] sm:w-[450px] h-auto shadow-2xl" src={aboutImg} alt="logo_white" />
@@ -26,9 +26,9 @@ const About = () => {
         </motion.div>
         <motion.div 
         whileInView={{opacity:1, x: 0}}
-        initial={{x:100, opacity: 0}} 
+        initial={{x:200, opacity: 0}} 
         animate={{x:0, opacity:1}}
-        transition={{duration:1}}
+        transition={{duration:4}}
         className="w-full lg:w-1/2">
           <div className="flex justify-center lg:justify-start">
             <div className="max-w-3xl mx-5 my-2 font-light tracking-tighter pt-9 sm:mx-0">
