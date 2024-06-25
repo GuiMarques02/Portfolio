@@ -11,12 +11,12 @@ import { GrMysql } from "react-icons/gr";
 import Marquee from "react-fast-marquee";
 
 const Technologies = () => {
+    const en = localStorage.getItem("lang") === "EN" ? true : false;
     return <div className="pb-24 border-b border-neutral-600">
-        <h2 className="my-20 text-center"><span className="text-3xl tracking-tight text-transparent sm:text-4xl bg-gradient-to-r from-pink-400 via-slate-400 to-purple-500 bg-clip-text">What I pretend to know</span></h2>
+        <h2 className="my-20 text-center"><span className="text-3xl tracking-tight text-transparent sm:text-4xl bg-gradient-to-r from-pink-400 via-slate-400 to-purple-500 bg-clip-text">{en ? "What I pretend to know" : "O que eu finjo saber"}</span></h2>
 
         <div className="py-2 space-x-16 ">
         <Marquee >
-
             <div className="p-4 my-2 transition-all ease-in-out border-4 mx-[40px] group rounded-2xl border-neutral-700 hover:scale-110 hover:bg-cyan-900 hover:bg-opacity-40">
                 <RiReactjsLine className="text-7xl text-cyan-400 group-hover:text-cyan-400" />
             </div>

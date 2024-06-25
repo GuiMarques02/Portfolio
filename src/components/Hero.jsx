@@ -1,5 +1,6 @@
 import React from 'react';
 import { HERO_CONTENT } from "../constants";
+import { HERO_CONTEUDO } from "../constants";
 import profilePic from "../assets/gui.png";
 import { motion } from "framer-motion";
 
@@ -14,6 +15,9 @@ const container = (delay) => ({
 
 const Hero = () => {
   const paragraphs = HERO_CONTENT.split('\n\n');
+  const paragrafos = HERO_CONTEUDO.split('\n\n');
+
+  const en = localStorage.getItem("lang") === "EN" ? true : false;
 
   return (
     <div className="pb-4 border-b border-neutral-600 lg:mb-35">
@@ -33,13 +37,38 @@ const Hero = () => {
               FrontEnd Developer WannaBe
             </motion.span>
             <div className="max-w-4xl py-6 mx-5 my-2 font-light tracking-tighter sm:mx-0">
-              {paragraphs.map((paragraph, index) => (
+              {/* {paragraphs.map((paragraph, index) => (
                 <motion.p
                   variants={container(1)}
                   initial="hidden"
                   animate="visible"
                   key={index} className="mb-5 text-neutral-400">{paragraph}</motion.p>
-              ))}
+              ))} */}
+              {en ? (
+                paragraphs.map((paragraph, index) => (
+                  <motion.p
+                    variants={container(1)}
+                    initial="hidden"
+                    animate="visible"
+                    key={index}
+                    className="mb-5 text-neutral-400"
+                  >
+                    {paragraph}
+                  </motion.p>
+                ))
+              ) : (
+                paragrafos.map((paragraph, index) => (
+                  <motion.p
+                    variants={container(1)}
+                    initial="hidden"
+                    animate="visible"
+                    key={index}
+                    className="mb-5 text-neutral-400"
+                  >
+                    {paragraph}
+                  </motion.p>
+                ))
+              )}
             </div>
           </div>
         </div>

@@ -18,14 +18,18 @@ const Contact = () => {
 
     setMessage('');
   };
+ 
+  const en = localStorage.getItem("lang") === "EN" ? true : false;
 
   return (
     <div className="bg-black border-b border-neutral-600">
       <h2 className="p-10 text-4xl text-center">
         <span className="text-3xl tracking-tight text-transparent bg-gradient-to-r from-pink-400 via-slate-400 to-purple-500 bg-clip-text sm:text-4xl">
-          Feel free to contact me
+        {en ? "Feel free to contact me" : "Sem vergonhas, contacta-me"}
+          
         </span>
       </h2>
+        <p className="pb-10 text-lg text-center text-neutral-400">Email: sftenglm@gmail.com</p>
       
       <form onSubmit={sendEmail} className="flex flex-col items-center justify-center">
         <div className="relative w-2/3">
@@ -33,7 +37,7 @@ const Contact = () => {
             name="message"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
-            placeholder="Leave here your message with your name and email..."
+            placeholder= {en ? "Leave here your message with your name and email and I'll reach to you as soon as possible." : "Escreve a tua mensagem com o teu nome e email, e tentarei responder o mais breve possível"}
             className="w-full h-40 min-h-[200px] max-h-[400px] p-4 text-black text-[18px] sm:rounded-[30px] rounded-[20px]"
           />
           <button type="submit" className="absolute bottom-5 right-4 text-2xl bg-black p-2 rounded-full hover:bg-[#5932e6]">
