@@ -1,14 +1,27 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { FaLinkedin, FaGithub, FaInstagram, FaTwitter, FaBars, FaTimes } from 'react-icons/fa';
 import logo from "../assets/GLM_small_white_logo.png";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [lang, setLang] = useState('EN');
 
+  //any new open window is in english
+  useEffect(() => {
+    const storedLang = localStorage.getItem('lang');
+    if (storedLang) {
+      setLang(storedLang);
+    } else {
+      localStorage.setItem('lang', 'EN');
+    }
+  }, []);
+  
   function changeLang(lang) {
     localStorage.setItem('lang', lang);
     window.location.reload();
   }
+
+
 
   return (
     <nav className="flex items-center justify-between py-10 mb-3 sm:mb-20">
@@ -17,9 +30,9 @@ const Navbar = () => {
       </div>
       <div className="items-center justify-center hidden gap-6 text-3xl text-white sm:flex mx-7 sm:mx-16 sm:gap-12 sm:text-4xl">
         <div className="flex gap-3 mr-2 sm:text-lg text-[15px]"> 
-          <button className="active:text-[#5932e6] cursor-pointer transition-all duration-200 ease-in-out hover:scale-110" onClick={() => changeLang("EN")}> EN </button>
+          <button className={`${lang==='EN' ? 'text-[#5932e6]' : '' } cursor-pointer transition-all duration-200 ease-in-out hover:scale-110`} onClick={() => changeLang("EN")}> EN </button>
           |
-          <button className="active:text-[#5932e6] cursor-pointer transition-all duration-200 ease-in-out hover:scale-110" onClick={() => changeLang("PT")}> PT </button>
+          <button className={`${lang==='PT' ? 'text-[#5932e6]' : '' } cursor-pointer transition-all duration-200 ease-in-out hover:scale-110`}onClick={() => changeLang("PT")}> PT </button>
         </div>
         <a className="hover:text-[#5932e6] cursor-pointer transition-all duration-200 ease-in-out hover:scale-110" href="https://github.com/GuiMarques02" target="_blank" rel="noopener noreferrer">
           <FaGithub />
